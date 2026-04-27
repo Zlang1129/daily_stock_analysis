@@ -360,7 +360,7 @@ jobs:
 
           # 执行分析
           if [ "$MODE" = "market-only" ]; then
-            python main.py --market-review $FORCE_RUN_ARG
+            python main.py --stocks $FORCE_RUN_ARG
           elif [ "$MODE" = "stocks-only" ]; then
             python main.py --no-market-review $FORCE_RUN_ARG
           else
